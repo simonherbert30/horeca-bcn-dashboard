@@ -1,0 +1,14 @@
+# Large source/cache files not needed at runtime
+places_api_cache.json
+venue_data.json
+Opgeslagen plaatsen.json
+takeout-20260225T183443Z-3-001.zip
+fetch_places_api.py
+fetch_venue_data.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
