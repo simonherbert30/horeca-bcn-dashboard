@@ -39,7 +39,14 @@ Then open **http://127.0.0.1:8051** in your browser.
 - **Input:** `Barcelona_ Horeca.csv` from the Google Takeout ZIP
 - **Enrichment:** Google Places API (Find Place + Place Details)
   - Real price levels (1–4), ratings, review counts, coordinates, address components
-  - API key used: stored only in `fetch_places_api.py`
+
+## Refreshing the data
+
+1. (Optional) Export a fresh Takeout of your saved places and update `ZIP_PATH` in `fetch_places_api.py`
+2. Set the `GOOGLE_MAPS_API_KEY` environment variable (the key's Google Cloud project needs billing enabled)
+3. Run `python fetch_places_api.py --refresh` to re-fetch latest ratings/prices for all venues
+   (without `--refresh`, only venues missing from the cache are fetched)
+4. Commit the regenerated `venues_enriched2.json`
 
 ## Dependencies
 
