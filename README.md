@@ -25,14 +25,14 @@ Then open **http://127.0.0.1:8051** in your browser.
 
 ## Dashboard features
 
-- **Treemap** — venue type breakdown (Bar, Restaurant, Japanese, Tapas/Vermut, etc.)
-- **Neighbourhood bar chart** — which areas have the most venues
-- **Heatmap map** — density map of all 555 venues across Barcelona
-- **Price chart** — approximate spend per person (< €10 / €10–20 / €20–40 / > €40)
-- **Avg rating by type** — which venue category rates best on Google
-- **Avg rating by neighbourhood** — which area has the best spots
-- **Top 10 highest-rated** — venues with ≥50 reviews sorted by rating
-- **Searchable & filterable table** — filter by type, neighbourhood, price, keyword
+- **Global filters** (sticky bar) — search names & notes, type, neighbourhood, price, minimum rating, "with my notes"; every chart, KPI, the map and the table update together
+- **Interactive map** — every venue as a dot (size = review count, colour = rating) or a heatmap; click a dot to open it in Google Maps
+- **Top picks** — Top rated / Crowd faves / Hidden gems, for the current filter
+- **KPI tiles** — venue count, average rating, share rated 4.5+, budget spots, top area
+- **Charts** — venue types and neighbourhoods (click a bar to filter), rating distribution, price mix, best-rated cuisines
+- **Venue table** — sortable, paged, with links to Google Maps
+
+Styling lives in `assets/style.css` (Dash loads it automatically).
 
 ## Data source
 
@@ -51,5 +51,5 @@ Then open **http://127.0.0.1:8051** in your browser.
 ## Dependencies
 
 ```
-pip install dash plotly pandas openpyxl requests
+pip install -r requirements.txt   # pinned versions; fetch script also needs requests
 ```
