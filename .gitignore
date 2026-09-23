@@ -2,7 +2,7 @@
 places_api_cache.json
 venue_data.json
 Opgeslagen plaatsen.json
-takeout-20260225T183443Z-3-001.zip
+takeout-*.zip
 fetch_places_api.py
 fetch_venue_data.py
 
