@@ -257,7 +257,7 @@ app.layout = html.Div(
                         style=dict(fontSize='1.65rem', fontWeight='700', margin=0,
                                    background=f'linear-gradient(90deg,{ACCENT},{ACCENT2})',
                                    WebkitBackgroundClip='text', WebkitTextFillColor='transparent')),
-                html.P('460 venues · real Google Places data · type · neighbourhood · price · ratings',
+                html.P('555 venues · real Google Places data · type · neighbourhood · price · ratings',
                        style=dict(color=MUTED, fontSize='0.85rem', marginTop='2px')),
             ]),
         ], style=dict(display='flex', alignItems='center', gap='16px',
